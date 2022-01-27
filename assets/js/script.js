@@ -19,7 +19,7 @@ currentDateEl.innerHTML = todayDate
 // WHEN I view the time blocks for that day
 // THEN each time block is color-coded to indicate whether it is in the past, present, or future
 
-
+function colorCode
 
 
 
