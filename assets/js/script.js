@@ -2,11 +2,12 @@
 // WHEN I open the planner
 // THEN the current day is displayed at the top of the calendar
 
-currentDateEl = document.querySelector("#currentDay");
+
 
 var todayDate = moment().format('MMMM Do, YYYY');
-console.log(todayDate);
-currentDateEl.innerHTML = todayDate
+$("#currentDay").append(todayDate);
+
+
 
 
 // WHEN I scroll down
@@ -19,7 +20,6 @@ currentDateEl.innerHTML = todayDate
 // WHEN I view the time blocks for that day
 // THEN each time block is color-coded to indicate whether it is in the past, present, or future
 
-function colorCode
 
 
 
