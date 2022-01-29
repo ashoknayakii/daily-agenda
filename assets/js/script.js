@@ -75,10 +75,20 @@ $(".saveBtn").on("click", function () {
 )
 
 console.log(localStorage.getItem("9"))
+
+// $(".text-area").attr("9").val(localStorage.getItem("9"))
 // $('text area with id 9 or class 9').val(local storage get item with key 9)
 // Repeat this for all other textareas
 
-
+$("#9 .event-text").val(localStorage.getItem("9"))
+$("#10 .event-text").val(localStorage.getItem("10"))
+$("11 .event-text").val(localStorage.getItem("11"))
+$("12 .event-text").val(localStorage.getItem("12"))
+$("13 .event-text").val(localStorage.getItem("13"))
+$("14 .event-text").val(localStorage.getItem("14"))
+$("15 .event-text").val(localStorage.getItem("15"))
+$("16 .event-text").val(localStorage.getItem("16"))
+$("17 .event-text").val(localStorage.getItem("17"))
 
 // WHEN I refresh the page
 // THEN the saved events persist
