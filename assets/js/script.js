@@ -10,6 +10,7 @@ $("#currentDay").append(todayDate);
 // THEN I am presented with time blocks for standard business hours
 // WHEN I view the time blocks for that day
 // THEN each time block is color-coded to indicate whether it is in the past, present, or future
+      
 function colorCode() {
     var currentHour = moment().hours();
     console.log('currentHour:', currentHour);
@@ -20,11 +21,13 @@ function colorCode() {
         );
         if (hourBlock < currentHour) {
             $(this).addClass('past')
+            $(this).attr('disabled', 'disabled')
         }
         else if (hourBlock === currentHour) {
             $(this).addClass('present')
         }
         else { $(this).addClass('future')}
+               
     })
 
     $(".time-block").each(function () {
@@ -82,13 +85,13 @@ console.log(localStorage.getItem("9"))
 
 $("#9 .event-text").val(localStorage.getItem("9"))
 $("#10 .event-text").val(localStorage.getItem("10"))
-$("11 .event-text").val(localStorage.getItem("11"))
-$("12 .event-text").val(localStorage.getItem("12"))
-$("13 .event-text").val(localStorage.getItem("13"))
-$("14 .event-text").val(localStorage.getItem("14"))
-$("15 .event-text").val(localStorage.getItem("15"))
-$("16 .event-text").val(localStorage.getItem("16"))
-$("17 .event-text").val(localStorage.getItem("17"))
+$("#11 .event-text").val(localStorage.getItem("11"))
+$("#12 .event-text").val(localStorage.getItem("12"))
+$("#13 .event-text").val(localStorage.getItem("13"))
+$("#14 .event-text").val(localStorage.getItem("14"))
+$("#15 .event-text").val(localStorage.getItem("15"))
+$("#16 .event-text").val(localStorage.getItem("16"))
+$("#17 .event-text").val(localStorage.getItem("17"))
 
 // WHEN I refresh the page
 // THEN the saved events persist
