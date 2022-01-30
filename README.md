@@ -1,1 +1,3 @@
-# Work Day Scheduler Starter Code
+# Work Day Scheduler
+
+The following workday scheduler is a simple app to manage a work day's agenda.  The text area features a basic input functionality with color coding to signal to the user when the hour has passed with a gray text area.  In addition, beyond the criteria which was asked for, the input areas are disabled once the hour has passed.  A red input box signifies the current hour and green for upcoming hours.  Local storage has been used to allow the events added to persist when the browser is reloaded.  Basic styling was added via Bootstrap for this site.  In the future, might consider updating with more styling features as well as more specificity within time brackets for events shorter than one hour. 
